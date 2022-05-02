@@ -1,0 +1,308 @@
+wy5syw54e2qr33wht4erefdynç.plkmj 9m @import url('https://fonts.googleapis.com/css2? family= Justo & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Justo &família = Sarala & display=swap');
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* Formatacao do corpo*/
+body {
+  font-size: 100%;
+  background: #D1CFE2;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+/* Formatacao do cabecalho*/
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:left;   /* Alinhei o menu no lado esquerdo, conforme indicação da PO - Apagar depois de ler*/
+  padding: 10px;
+  background: #13ACB6;
+  width: 100%;
+  margin-top: -1%;
+  margin-left: -1%;
+  position: fixed;
+}
+
+.cabecalho-imagem {   /* Alterei a logo da equipe*/
+  height: 110px;
+  width: 190px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  margin-left: 5%;
+  gap: 39px;
+}
+
+a:hover {
+  transition: 0.5s;
+  color: black;
+  text-decoration:underline;  /* Removi o underline do menu e adicionei ele no hover quando o pointer passar nele, acho que fica mais estético*/
+}
+
+.cabecalho-menu-item {
+  margin-top: 5%;  
+  color: white;
+  font-family: 'Sarala' sans-serif;
+  text-decoration-line: none;
+  font-weight: 400px;
+  font-size: 36px;
+
+}
+
+/* Formatacao da Parte 1 - Home*/
+#section-1 {
+  display: flex;
+  flex: 1 1 300px;
+  justify-content: center;
+  width: 100%;
+  padding-left: 10px;
+}
+
+#Titulo-left {
+  padding: 20px;
+  color: black;
+  font-size: 30px;
+  margin-top: 10%;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+#Titutlo-1-Text1 {
+  list-style: none;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+#Titutlo-1-Text2 {
+  flex-wrap: wrap;
+  margin-left: 40px;
+  list-style: disc;
+}
+
+#Titulo-right {
+  border-radius: 10px;
+  background-color: #197AA1;
+  margin-top: 8%;
+  padding: 10px 10px 10px 10px;
+  padding-right: 0;
+  font-size: 20px;
+  width: 50%;
+  margin-right: -10%;
+  flex-wrap: wrap;
+}
+
+#Titutlo-2-Text {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  color: #fff;
+  font-size: 30px;
+  padding: 5px;
+  margin-top: 2%;
+  margin-right: 20%;
+}
+
+#img1 {    /* Retirei o escrito da img e reduzi o tamanho dela. motivo: adequação opção traduzir do site. apagar depois de ver esse aviso*/
+  margin-left: -10%;
+  height: 300px;
+  width: 310px;
+  margin-top: 85%;
+}
+
+/* Formatacao da Parte 2 - Planeje*/
+#section-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 30%;
+  width: 50%;
+  font-size: 25px;
+  padding-right: 10px;
+  height: 700px;
+}
+
+.img2 {  /* Retirei o escrito da img e reduzi o tamanho dela. motivo: adequação opção traduzir do site. apagar depois de ver esse aviso*/
+  margin-top: 10%;
+  height: 300px;
+}
+
+h1{
+    margin-left: 5%;
+    width: 700px;
+}
+
+#Titutlo-3-Text {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  color: rgb(10, 0, 0);
+  font-size: 30px;
+  padding: 5px;
+  margin-top: 2%;
+  border: solid #9CADCE;
+  border-radius: 10px;
+}
+/* Formatação da Parte 3 - Grid*/
+.calculadora__block {
+    border-bottom: 1px solid #e6efff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.calculadora__block {
+    border-bottom: 1px solid #e6efff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+* {
+    outline: 0;
+    padding: 0;
+}
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    outline: 0;
+    padding: 0;
+}
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+
+/* Formatacao da Parte 4 - Conheça colaboradores*/
+article.cards {
+  display: flex;
+  padding: 32px;
+}
+
+article.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 256px;
+  margin-left: 32px;
+}
+
+article.cards section.card:first-child {
+  margin-left: 0;
+}
+
+article.cards section.card .icon {
+  width: 8rem;
+  height: 8rem;
+}
+
+article.cards section.card img {
+  width: 100%
+}
+
+/* Começa a formatação do formulario captação de leading*/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+  height: 400px;
+}
+
+#Contato {
+  font-size: 50px;
+}
+
+.form-paragrafo {
+  font-size: 40px;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  height: 60px;
+  width: 700px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 25px;
+  gap: 2px;
+}
+
+form [type="submit"] {
+  width: 5%;
+  height: 50px;
+  background-color: #f3f3b5;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Começa a formatação do rodape*/
+.rodape {
+  height: 170px;
+  width: 100%;
+  background: #13ACB6;
+}
+
+.rodape-left {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: unset;
+  margin-top: 50px;
+  text-align: left;
+  color: #fff;
+}
+
+.rodape h2 {
+  margin-left: 1%;
+}
+
+#rodape-img {
+  margin-left: 3%;
+  height: 90px;
+  width: 90px;
+}

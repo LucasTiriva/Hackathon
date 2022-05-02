@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto Hackthon da Equipe 13 - 2º Desafio">
+  <!--Integrantes: Lucas Tiriva/ Jeison Tomio/ -->
+  <title>Hackthon Equipe 13</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="media.css">
+  <link rel="icon" href="assets/13.png">
+</head>
+
+<body>
+  <!--Formatação do cabeçalho-->
+  <header class="cabecalho" id="cabecalho">
+    <img class="cabecalho-imagem" src="assets/13-tilte.png" href="#" id="headerLogo" alt="Logo da Equipe 13">
+    <!--Logo no cabeçalho-->
+    <nav class="cabecalho-menu">
+      <a class="cabecalho-menu-item" href="#">Home</a>
+      <a class="cabecalho-menu-item" href="#section-2">Planejar</a>
+      <a class="cabecalho-menu-item" href="#Titulo-Planeje">Equipe</a>
+      <a class="cabecalho-menu-item" href="#Contato">Contato</a>
+    </nav>
+  </header>
+  <!--Corpo do site-->
+  <main class="conteudo" id="conteudo">
+    <!--Parte 1 do corpo-->
+    <section class="section-1" id="section-1">
+      <div class="Titulo-1" id="Titulo-left">
+        <h1>Assuma o controle das suas Finanças</h1>
+        <ul>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text1"> Os principais benefícios dessa ferramenta são:</li>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text2">Ter o controle mensal das despesas e dos rendimentos que
+            movimentam o seu fluxo de caixa;</li>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text2">Ter uma visão completa do resumo financeiro anual;</li>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text2">Realizar previsões para investimentos futuros.</li>
+        </ul>
+      </div>
+      <div class="Titulo-2" id="Titulo-right">
+        <ul>
+          <p class="Titulo-2-Text" id="Titutlo-2-Text"> O controle financeiro é chave para o sucesso de qualquer
+            negócio, planos e projetos de vida. Por isso, fizemos essa ferramenta prática e gratuita para que você
+            consiga organizar a gestão financeira da sua empresa.
+          </p>
+          <p class="Titulo-2-Text" id="Titutlo-2-Text">Nossa Assistente Seventeen vai te ajudar a analisar as
+            movimentações do seu caixa de um jeito simples e eficiente.</p>
+          <p class="Titulo-2-Text" id="Titutlo-2-Text">Além disso, você também passará a ter um registro organizado da
+            saúde financeira dos seus rendimentos.</p>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <img src="assets/calculater.png" class="img1" id="img1">
+        </ul>
+      </div>
+    </section>
+    <!--Parte 2 do corpo-->
+    <section class="section-2" id="section-2">
+      <div>
+        <img src="assets/Planeje.png" class="img2" id="img2">
+
+      </div>
+      <div class="Titulo-3" id="Titulo-Planeje">
+        <h1>Planejar seus gastos e criar objetivos!</h1>
+        <ul>
+          <p class="Titulo-3-Text" id="Titutlo-3-Text"> Faça orçamento mensais, mantenha seus gastoso sob controle para
+            juntar dinheiro e alcançar aquele sonho tão aguardado.</p>
+        </ul>
+      </div>
+    </section>  
+      <!--Parte 2 - Formatação por GRID-->
+    </section> 
+    <div class="calculadora__block"> 
+        <form class="container__input__calculadora" id="container__calculate__budget"> 
+        <div class="row__titulo__calculadora"> </div> 
+        <div class="row__new__titulo__calculadora__budgets"> 
+        <h2 class="row__new__titulo__calculadora__budgets--h2">Como a regra 50-30-20 funciona?</h2> 
+        <p class="row__new__titulo__calculadora__budgets--subtitulo">Primeiramente, insira o seu rendimento líquido para saber como você deveria distribuir seus gastos.</p> 
+        </div>
+         <div class="row__input__calculadora"> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="numero__dependente">Rendimento líquido</label>
+         <div class="tooltip"> 
+        <figure> <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle>
+         <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path>
+         </g> </svg>
+         </figure> <span class="tooltiptext"> Informe seu rendimento mensal. Some seu salário líquido, rendimentos de aluguéis, investimentos ou outras fontes de renda.</span> 
+        </div> 
+        </div>
+         <div class="input__valor"> 
+        <label class="cifrao" for="monthly__income">R$</label>
+        <input inputmode="numeric" type="text" name="monthly__income" id="monthly__income" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)"> 
+        </div> 
+        </div> 
+        </div>
+         <div class="row__tabela__calculadora d-block" id="table__result__budegt"> 
+        <h2 class="titulo__resultado d-block">Como deveria distribuir meu orçamento?</h2> <table class="resultado d-block"> <tbody><tr> <th><span>Tipo de Despesa</span></th> <th><span>Valor</span></th> </tr> <tr> <td>Custos Essenciais</td> <td id="dep__essential">R$&nbsp;0,00</td> </tr> <tr> <td>Custos Pessoais</td> <td id="dep__personal">R$&nbsp;0,00</td> </tr> <tr> <td>Reserva Financeiras</td> <td id="dep__financial">R$&nbsp;0,00</td> </tr> <tr></tr> </tbody></table> 
+        </div>
+        <div class="row__new__titulo__calculadora__budgets"> 
+        <h2 class="row__new__titulo__calculadora__budgets--h2">Como estão meus gastos?</h2> <p class="row__new__titulo__calculadora__budgets--subtitulo">Agora, insira seus gastos estimados para cada categoria de custo para saber se eles se adequam à regra 50/30/20</p>
+        </div>
+        <section id="input__budgets"> 
+        <div class="row__new__titulo__calculadora__budgets"> 
+        <h3 class="row__new__titulo__calculadora__budgets--h3">Custos essenciais</h3>
+         <p class="row__new__titulo__calculadora__budgets--subtitulo">Custos Essenciais são aqueles gastos as quais você não pode evitar.</p> 
+        </div> 
+        <div class="row__input__calculadora"> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_home">Moradia</label> 
+        <div class="tooltip"> 
+        <figure> <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path>
+         </g> </svg>
+         </figure> <span class="tooltiptext">Gastos com a casa incluindo parcelas de financiamento, condomínio, aluguel e manutenção.</span> 
+        </div>
+        </div>
+         <div class="input__valor"> 
+        <label class="cifrao" for="budget_home">R$</label>
+        <input inputmode="numeric" type="text" name="budget_home" id="budget_home" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)"> 
+        </div> 
+        </div> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_service">Serviços</label>
+        <div class="tooltip">
+        <figure> <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path>
+        </g> </svg>
+        </figure> <span class="tooltiptext">Gastos e despesas com água, luz e gás.</span> 
+        </div> 
+        </div> 
+        <div class="input__valor"> 
+        <label class="cifrao" for="budget_service">R$</label>
+        <input inputmode="numeric" type="text" name="budget_service" id="budget_service" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)">
+         </div> 
+        </div> 
+        </div> 
+        <div class="row__input__calculadora"> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_transport">Transporte</label> 
+        <div class="tooltip"> 
+        <figure> <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path> 
+        </g> </svg> 
+        </figure> <span class="tooltiptext">Gastos com financiamento de veículo, combustível, manutenção, seguro, impostos, transporte público ou aplicativos.</span> 
+        </div>
+         </div>
+         <div class="input__valor"> 
+        <label class="cifrao" for="budget_transport">R$</label>
+        <input inputmode="numeric" type="text" name="budget_transport" id="budget_transport" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)">
+         </div>
+         </div> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_food">Alimentação</label> 
+        <div class="tooltip"> 
+        <figure> <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path> 
+        </g> </svg> 
+        </figure> <span class="tooltiptext">Gastos com supermercado, mercearia, feira e hortifrúti. Não incluir restaurantes e delivery.</span>
+         </div> 
+        </div> 
+        <div class="input__valor"> 
+        <label class="cifrao" for="budget_food">R$</label>
+        <input inputmode="numeric" type="text" name="budget_food" id="budget_food" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)">
+         </div>
+         </div>
+         </div> 
+        <div class="row__input__calculadora"> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_cheers">Saúde</label>
+         <div class="tooltip">
+         <figure> 
+        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path> 
+        </g> 
+        </svg>
+         </figure> 
+        <span class="tooltiptext">Gastos com planos de saúde, medicação e prevenção de doenças.</span>
+         </div> 
+        </div> 
+        <div class="input__valor"> 
+        <label class="cifrao" for="budget_cheers">R$</label>
+        <input inputmode="numeric" type="text" name="budget_cheers" id="budget_cheers" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)">
+         </div> 
+        </div> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_education">Educação</label> 
+        <div class="tooltip"> 
+        <figure> 
+        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path> 
+        </g> 
+        </svg> 
+        </figure> 
+        <span class="tooltiptext">Gastos com educação básica e obrigatório. Não incluir cursos livres ou de extensão.</span> 
+        </div> 
+        </div> 
+        <div class="input__valor"> 
+        <label class="cifrao" for="budget_education">R$</label>
+        <input inputmode="numeric" type="text" name="budget_education" id="budget_education" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)"> 
+        </div> 
+        </div> 
+        </div> 
+        <div class="row__new__titulo__calculadora__budgets"> 
+        <h3 class="row__new__titulo__calculadora__budgets--h3">Custos pessoais</h3> 
+        <p class="row__new__titulo__calculadora__budgets--subtitulo">Custos pessoais são aqueles gastos com maior flexibilidade. São importantes para você, mas podem ser evitados na hora do aperto.</p> 
+        </div> 
+        <div class="row__input__calculadora"> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_internet">Internet e Telefone</label> 
+        <div class="tooltip">
+         <figure> <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43">
+        </path>
+         </g>
+         </svg> 
+        </figure>
+         <span class="tooltiptext">Gastos com internet e telefonia.</span> 
+        </div>
+         </div> 
+        <div class="input__valor">
+         <label class="cifrao" for="budget_internet">R$</label>
+        <input inputmode="numeric" type="text" name="budget_internet" id="budget_internet" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)">
+         </div> 
+        </div> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input">
+         <label for="budget_travel">Viagens e passeios</label>
+         <div class="tooltip"> 
+        <figure> 
+        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path> 
+        </g> 
+        </svg> 
+        </figure> 
+        <span class="tooltiptext">Gastos com férias, happy hours e outras atividades de lazer.</span> 
+        </div> 
+        </div> 
+        <div class="input__valor"> 
+        <label class="cifrao" for="budget_travel">R$</label>
+        <input inputmode="numeric" type="text" name="budget_travel" id="budget_travel" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)"> 
+        </div>
+         </div> 
+        </div> 
+        <div class="row__input__calculadora"> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_streaming">Entretenimento e streaming</label> 
+        <div class="tooltip"> 
+        <figure> 
+        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle>
+         <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path> 
+        </g> 
+        </svg> 
+        </figure>
+         <span class="tooltiptext">Gastos com assinaturas de aplicativos, jogos, filmes, shows e concertos.</span>
+         </div>
+         </div> 
+        <div class="input__valor"> 
+        <label class="cifrao" for="budget_streaming">R$</label>
+        <input inputmode="numeric" type="text" name="budget_streaming" id="budget_streaming" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)"> 
+        </div> 
+        </div>
+         <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_present">Presentes e doações</label> <div class="tooltip"> 
+        <figure> 
+        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path>
+         </g> 
+        </svg>
+         </figure>
+         <span class="tooltiptext">Gastos eventuais com presentes, agrados, caridade e outros.</span> 
+        </div> 
+        </div> 
+        <div class="input__valor">
+         <label class="cifrao" for="budget_present">R$</label>
+        <input inputmode="numeric" type="text" name="budget_present" id="budget_present" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)">
+         </div>
+         </div> 
+        </div> 
+        <div class="row__input__calculadora"> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_other">Shopping e Outros</label> 
+        <div class="tooltip">
+         <figure> 
+        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd">
+         <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle>
+         <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path> 
+        </g> 
+        </svg>
+         </figure> 
+        <span class="tooltiptext">Gastos importantes para você e que não foram listados anteriormente.</span> 
+        </div>
+         </div> 
+        <div class="input__valor"> 
+        <label class="cifrao" for="budget_other">R$</label>
+        <input inputmode="numeric" type="text" name="budget_other" id="budget_other" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)"> 
+        </div> 
+        </div> 
+        </div>
+         <div class="row__new__titulo__calculadora__budgets"> 
+        <h3 class="row__new__titulo__calculadora__budgets--h3">Reserva financeiras</h3>
+         <p class="row__new__titulo__calculadora__budgets--subtitulo">Dinheiro direcionado às suas metas financeiras, sobretudo, pagamento de dívidas e poupanças ou investimentos.</p> 
+        </div> 
+        <div class="row__input__calculadora"> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_debts">Pagamento de dívidas</label>
+         <div class="tooltip"> 
+        <figure>
+         <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd">
+         <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle>
+         <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path>
+         </g>
+         </svg>
+         </figure> 
+        <span class="tooltiptext">Caso tenha uma dívida, inclua aqui o quanto é destinado mensalmente. Exclua financiamentos essenciais como moradia e transporte.</span> 
+        </div>
+         </div> 
+        <div class="input__valor">
+         <label class="cifrao" for="budget_debts">R$</label>
+        <input inputmode="numeric" type="text" name="budget_debts" id="budget_debts" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)"> 
+        </div>
+         </div> 
+        <div class="input__calculadora"> 
+        <div class="titulo__input"> 
+        <label for="budget_poup">Investimentos e poupanças</label> 
+        <div class="tooltip">
+         <figure> 
+        <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> 
+        <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95"></circle> 
+        <path d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z" fill="#363A43"></path>
+         </g> 
+        </svg> 
+        </figure>
+         <span class="tooltiptext">Inclua aqui sua parcela mensal para segurança financeira, incluindo reserva de emergência, previdência privada e investimentos.</span> 
+        </div> 
+        </div> 
+        <div class="input__valor"> 
+        <label class="cifrao" for="budget_poup">R$</label>
+        <input inputmode="numeric" type="text" name="budget_poup" id="budget_poup" class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)"> 
+        </div>
+         </div>
+         </div> 
+        <div class="row__input__calculadora"> 
+        <div class="buttons__calculadora"> 
+        </div> 
+        </div>
+         <div class="row__tabela__calculadora d-block" id="table__result__spending"> 
+        <h2 class="titulo__resultado d-block">Resultado dos gastos</h2> 
+        <table class="resultado d-block"><tbody><tr> <th><span>Descrição</span></th> <th><span>Valor</span></th> </tr> <tr> <td>Seu rendimento é de </td> <td id="dep__income">R$&nbsp;0,00</td> </tr> <tr> <td>Seu gasto mensal total</td> <td id="dep__total">R$&nbsp;239,00</td> </tr> <tr> <td id="dep__resposta" colspan="2">Parabéns, você consegue ter grande flexibilidade financeira.</td> </tr> <tr></tr> </tbody></table>
+         </div> 
+        <div class="row__tabela__calculadora d-block" id="table__result__cheers"> 
+        <h2 class="titulo__resultado d-block">Sua saúde financeira</h2> 
+        <table class="resultado d-block"> <tbody><tr> <th><span>Descrição</span></th> <th><span>Valor</span></th> </tr> <tr> <td>Custos essenciais: </td> <td id="result__desp__essential">Seus&nbsp;custos essenciais estão abaixo do previsto. Você poderá ter mais flexibilidade.</td> </tr> <tr> <td>Custos pessoais:</td> <td id="result__desp__personal">Seus custos&nbsp;pessoais estão abaixo do esperado. Talvez um pouco de diversão possa fazer bem!</td> </tr> <tr> <td>Reservas financeiras:</td> <td id="result__desp__financial">Sua reserva financeira está indo muito bem! Caso já tenha&nbsp;sua&nbsp;Reserva de&nbsp;Emergência, considere começar a diversificar seus investimentos.</td> </tr> <tr></tr> </tbody></table> 
+        </div> 
+        </section>  
+        <div class="widget-sidebar--result-calc"> 
+        <aside id="ai_widget-10" class="widget ai_widget">
+        <div class="code-block code-block-54" style="margin: 8px 0; clear: both;">
+        <!--?php$ids_calcs_noadsense = [];if ( is_single ( $ids_calcs_noadsense ) ) : ?-->
+        <div class="widget__resultado__calculadora--adsense" id="widget-result-calc-adsense"></div>
+        <!--?php else : ?-->
+        <div class="widget__resultado__calculadora--adsense" id="widget-result-calc-adsense"></div>
+        <!--?php endif; ?-->
+        </div>
+        </aside>
+        </div>
+        </form>
+         </div>
+
+    </section>
+    <!--Parte 3 - Membros-->
+    <article class="cards">
+      <section class="card">
+        <div class="icon">
+        <img src="assets/Login.png" alt="Jeison">
+        </div>
+        <h3>Jeison</h3>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem placeat sit quod mollitia cum
+          suscipit.</span>
+        <button>Saiba mais</button>
+      </section>
+      <section class="card">
+        <div class="icon">
+        <img src="assets/Login.png" alt="Lucas">
+        </div>
+        <h3>Lucas</h3>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem placeat sit quod mollitia cum
+          suscipit.</span>
+        <button>Saiba mais</button>
+      </section>
+    </article>
+
+    <section>
+      <div>
+        <form class="form">
+          <h2 class="Contato" id="Contato">Contate-nos</h2>
+          <p class="form-paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <input class="campo" type="nome" placeholder="Nome">
+          <input class="campo" type="email" placeholder="E-mail">
+          <input class="botao" type="submit" value="Enviar">
+        </form>
+      </div>
+    </section>
+
+
+  </main>
+  <!--Principal-->
+
+  <footer class="rodape">
+    <ul>
+      <li class="rodape-left"><img src="assets/Logo-17.png" id="rodape-img">
+        <h2>Tech Academy</h2>
+        <p>Equipe 13 - 2º Desafio Hackthon</p>
+      </li>
+    </ul>
+
+  </footer>
+  <!--Rodapé-->
+</body>
+
+</html>
