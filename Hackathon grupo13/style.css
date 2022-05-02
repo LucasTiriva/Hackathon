@@ -27,7 +27,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  background: #52B2CF;
+  background: #13ACB6;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -90,7 +90,7 @@ a:hover {
 
 #Titulo-right {
   border-radius: 10px;
-  background-color: #00C897;
+  background-color: #197AA1;
   margin-top: 8%;
   padding: 10px 10px 10px 10px;
   padding-right: 0;
@@ -149,189 +149,34 @@ a:hover {
 }
 
 /* Formatacao da Parte 3 - Conheça colaboradores*/
-#section-3 {
+article.cards {
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: baseline;
-  background: #9CADCE;
-  width: 100%;
-  height: 650px;
-  gap: 70px;
+  padding: 32px;
 }
 
-#titulo-equipe {
+article.cards section.card {
   display: flex;
-  flex-direction: row;
-  justify-content: c;
-  margin-top: 5%;
-  margin-left: 90%;
-  width: 100%;
-  font-family: sans-serif;
-  font-size: 35px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 256px;
+  margin-left: 32px;
 }
 
-/* Formatacao Card Jeison Tomio*/
-h5 {
-  margin-left: 10%;
-  margin: 0px;
-  font-size: 1.4em;
-  font-weight: 700;
-}
-
-center {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  width: 100%;
-  margin-top: 5%;
+article.cards section.card:first-child {
   margin-left: 0;
 }
 
-.property-card {
-  margin-top: 45%;
-  margin-left: -55%;
-  height: 18em;
-  width: 14em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: absolute;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius: 16px;
-  overflow: hidden;
-  -webkit-box-shadow: 1px 1px 2px #e1e1e3, -1px -1px 2px #ffffff;
-  box-shadow: 1px 1px 2px #e1e1e3, -1px -1px 2px #ffffff;
+article.cards section.card .icon {
+  width: 8rem;
+  height: 8rem;
 }
 
-.property-image2 {
-  height: 6em;
-  width: 14em;
-  padding: 1em 2em;
-  position: Absolute;
-  top: 0px;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url('http://eaassets-a.akamaihd.net/battlelog/prod/61d099d23fe104fe673091d470c96970/en_US/blog/en/files/2016/10/Blog.jpg?v=1477088011.5');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* Bottom Card Section */
-.property-description {
-  background-color: #FAFAFC;
-  height: 12em;
-  width: 14em;
-  position: absolute;
-  bottom: 0em;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
-  text-align: center;
-}
-
-/* Property Cards Hover States */
-.property-card:hover .property-description {
-  height: 0em;
-  padding: 0px 1em;
-}
-
-.property-card:hover .property-image2 {
-  height: 18em;
-}
-
-.property-card:hover .property-social-icons {
-  background-color: white;
-}
-
-/*Formatacao Card - Lucas Tiriva*/
-h5 {
-  margin-left: 10%;
-  margin: 0px;
-  font-size: 1.4em;
-  font-weight: 700;
-}
-
-center {
-  display: flex;
-  flex-direction: row;
-
-  height: 100vh;
-  width: 100%;
-  margin-top: 5%;
-  margin-left: -10%;
-}
-
-.property-card {
-  margin-top: 45%;
-  margin-left: -55%;
-  height: 18em;
-  width: 14em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius: 16px;
-  overflow: hidden;
-  -webkit-box-shadow: 1px 1px 2px #e1e1e3, -1px -1px 2px #ffffff;
-  box-shadow: 1px 1px 2px #e1e1e3, -1px -1px 2px #ffffff;
-}
-
-.property-image {
-  height: 6em;
-  width: 14em;
-  padding: 1em 2em;
-  position: Absolute;
-  top: 0px;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-image: url('http://avatars.githubusercontent.com/u/94218497?v=4');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* Bottom Card Section */
-.property-description {
-  background-color: #FAFAFC;
-  height: 12em;
-  width: 14em;
-  position: absolute;
-  bottom: 0em;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
-  text-align: center;
-}
-
-/* Property Cards Hover States */
-.property-card:hover .property-description {
-  height: 0em;
-  padding: 0px 1em;
-}
-
-.property-card:hover .property-image {
-  height: 18em;
-}
-
-.property-card:hover .property-social-icons {
-  background-color: white;
+article.cards section.card img {
+  width: 100%
 }
 
 /* Começa a formatação do formulario captação de leading*/
@@ -376,7 +221,7 @@ form [type="submit"] {
 .rodape {
   height: 170px;
   width: 100%;
-  background: #52B2CF;
+  background: #13ACB6;
 }
 
 .rodape-left {
