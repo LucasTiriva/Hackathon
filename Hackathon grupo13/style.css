@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 /* Formatacao do corpo*/
@@ -50,7 +51,7 @@ a:hover {
 
 .cabecalho-menu-item {
   color: white;
-  font-family: 'Sarala';
+  font-family: 'Sarala' sans-serif  ;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -89,7 +90,7 @@ a:hover {
 
 #Titulo-right {
   border-radius: 10px;
-  background-color: #7EC4CF;
+  background-color: #00C897;
   margin-top: 8%;
   padding: 10px 10px 10px 10px;
   padding-right: 0;
@@ -385,7 +386,7 @@ form [type="submit"] {
   text-transform: unset;
   margin-top: 50px;
   text-align: left;
-  color: gray;
+  color: #fff;
 }
 
 .rodape h2 {
