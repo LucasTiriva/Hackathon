@@ -1,111 +1,126 @@
 @import url('https://fonts.googleapis.com/css2? family= Justo & display=swap');
 
-@import url('https://fonts.googleapis.com/css2? family= Justo &família = Sarala & display=swap');
+@font-face {
+  font-family: 'Sarala Bold';
+  src: url(fonts/Sarala-Bold.ttf) format('opentype');
+  font-weight: bold;
+}
 
+@font-face {
+  font-family: 'Sarala Regular';
+  src: url(fonts/Sarala-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
 * {
 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: sans-serif;
 }
 
 /* Formatacao do corpo*/
 body {
   font-size: 100%;
-  background: #D1CFE2;
-  font-family: sans-serif;
+  background: #031a1b;
   font-size: 1em;
   transition: background 0.2 linear;
 }
 
 /* Formatacao do cabecalho*/
-.cabecalho {
+header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px;
   background: #13ACB6;
   width: 100%;
   position: fixed;
   z-index: 1;
 }
 
-.cabecalho-imagem {
-  height: 90px;
-  width: 90px;
-  border-radius: 100%;
+header > img {
+  height: 60px;
+  width: 60px;
+  padding: 0px 5px;
+  margin: 0px 30px 0px 50px;
 }
 
-.cabecalho-menu {
+nav {
   display: flex;
   gap: 39px;
 }
 
-a:hover {
+nav > a {
+  color: white;
+  font-family:'Sarala Regular';
+}
+
+nav > a:hover {
   transition: 0.5s;
   color: black;
 }
 
-.cabecalho-menu-item {
-  color: white;
-  font-family: 'Sarala' sans-serif  ;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 44px;
+/* Formatacao da Parte 1 - Home*/
+
+main {
+  min-width: 300px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* Formatacao da Parte 1 - Home*/
-#section-1 {
+.section-1 {
   display: flex;
   flex: 1 1 300px;
   justify-content: center;
   width: 100%;
-  padding-left: 10px;
+  font-family: 'Sarala Regular'
 }
 
-#Titulo-left {
-  padding: 20px;
-  color: black;
-  font-size: 30px;
+.content-left {
+  color: white;
+  font-size: 1em;
   margin-top: 10%;
   width: 50%;
-  flex-wrap: wrap;
 }
 
-#Titutlo-1-Text1 {
-  list-style: none;
-  margin-left: 10px;
-  font-size: 30px;
+.content-left h1 {
+  margin-top: 60px;
+  font-family: 'Sarala Bold';
+  font-size: 2em;
+  text-align: center;
+  color: #13ACB6;
+  max-width: 400px;
 }
 
-#Titutlo-1-Text2 {
-  flex-wrap: wrap;
-  margin-left: 40px;
-  list-style: disc;
+.content-left h2 {
+  font-family: 'Sarala Bold';
+  font-size: 1.25em;
+  text-align: center;
+  max-width: 400px;
 }
 
-#Titulo-right {
+.content-left p {
+  margin: 25px;
+}
+
+.content-right {
   border-radius: 10px;
   background-color: #197AA1;
+  box-shadow: 5px 5px 0px white;
   margin-top: 8%;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   padding-right: 0;
-  font-size: 20px;
+  font-size: 1.3em;
   width: 50%;
   margin-right: -10%;
   flex-wrap: wrap;
 }
 
-#Titutlo-2-Text {
+.content-right p {
   display: flex;
   flex-direction: row;
   align-content: center;
   color: #fff;
-  font-size: 30px;
   padding: 5px;
   margin-top: 2%;
   margin-right: 20%;
@@ -119,33 +134,40 @@ a:hover {
 }
 
 /* Formatacao da Parte 2 - Planeje*/
-#section-2 {
+.section-2 {
+  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 10%;
-  margin-left: 30%;
-  width: 50%;
+  margin: auto;
+  min-width: 350px;
+  max-width: 700px;
   font-size: 25px;
-  padding-right: 10px;
-  height: 700px;
+  padding: 40px 10px;
+
 }
 
-.img2 {
+.section-2 img {
   margin-top: 10%;
   height: 300px;
 }
 
-#Titutlo-3-Text {
+.section-2 h1 {
+  font-size: 1.4em;
+  font-family: 'Sarala Bold';
+}
+
+.section-2 p{
   display: flex;
   flex-direction: row;
   align-content: center;
-  color: rgb(10, 0, 0);
-  font-size: 30px;
+  font-size: 0.9em;
   padding: 5px;
   margin-top: 2%;
-  border: solid #9CADCE;
-  border-radius: 10px;
+  background-color: #197AA1;
+  box-shadow: 5px 5px 0px white;
+  border-radius: 5px;
+  font-family: 'Sarala Regular';
 }
 
 /* Formatacao da Parte 3 - Conheça colaboradores*/
@@ -218,7 +240,7 @@ form [type="submit"] {
 }
 
 /* Começa a formatação do rodape*/
-.rodape {
+footer {
   height: 170px;
   width: 100%;
   background: #13ACB6;
@@ -230,7 +252,7 @@ form [type="submit"] {
   font-weight: bold;
   text-transform: unset;
   margin-top: 50px;
-  text-align: left;
+  text-align: center;
   color: #fff;
 }
 
