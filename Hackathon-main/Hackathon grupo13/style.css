@@ -1,4 +1,4 @@
-wy5syw54e2qr33wht4erefdynç.plkmj 9m @import url('https://fonts.googleapis.com/css2? family= Justo & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Justo & display=swap');
 
 @import url('https://fonts.googleapis.com/css2? family= Justo &família = Sarala & display=swap');
 
@@ -9,6 +9,14 @@ wy5syw54e2qr33wht4erefdynç.plkmj 9m @import url('https://fonts.googleapis.com/c
   box-sizing: border-box;
   text-decoration: none;
   font-family: sans-serif;
+}
+
+:root {
+  --base-color: #FFFAFA;
+  --itens-color: #DCDCDC;
+  --dark-color: #A9A9A9;
+  --words-color: #000;
+  --shadow-color: #808080;  
 }
 
 /* Formatacao do corpo*/
@@ -47,7 +55,7 @@ body {
 
 a:hover {
   transition: 0.5s;
-  color: black;
+  color: var(--words-color);
   text-decoration:underline;  /* Removi o underline do menu e adicionei ele no hover quando o pointer passar nele, acho que fica mais estético*/
 }
 
@@ -72,7 +80,7 @@ a:hover {
 
 #Titulo-left {
   padding: 20px;
-  color: black;
+  color: var(--words-color);
   font-size: 30px;
   margin-top: 10%;
   width: 50%;
@@ -93,7 +101,7 @@ a:hover {
 
 #Titulo-right {
   border-radius: 10px;
-  background-color: #197AA1;
+  background-color: var(--itens-color);
   margin-top: 8%;
   padding: 10px 10px 10px 10px;
   padding-right: 0;
@@ -107,7 +115,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-content: center;
-  color: #fff;
+  color: var(--words-color);
   font-size: 30px;
   padding: 5px;
   margin-top: 2%;
@@ -148,7 +156,7 @@ h1{
   display: flex;
   flex-direction: row;
   align-content: center;
-  color: rgb(10, 0, 0);
+  color: var(--words-color)
   font-size: 30px;
   padding: 5px;
   margin-top: 2%;
@@ -170,11 +178,13 @@ article.cards section.card {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: white;
+  background-color: var(--itens-color);
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  max-height: 256px;
+  max-height:  468px;
   margin-left: 32px;
+  box-shadow: 20px 20px 50px -30px var(--shadow-color);
+  font-family: sans-serif;
 }
 
 article.cards section.card:first-child {
@@ -188,6 +198,27 @@ article.cards section.card .icon {
 
 article.cards section.card img {
   width: 100%
+}
+
+article.cards section.card h3 {
+  margin: 16px 0;
+  font-size: 100%;
+}
+
+article.cards section.card span {
+  font-weight: 300;
+  font-size: 80%;
+}
+
+article.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  background-color: var(--dark-color)
 }
 
 /* Começa a formatação do formulario captação de leading*/
@@ -206,7 +237,7 @@ article.cards section.card img {
 
 .formulario h1{
     font-size: 3rem;
-    color: black;
+    color: var(--words-color)
     margin-bottom: 2rem;
     text-align: center;
     line-height: 1.2;

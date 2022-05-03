@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto Hackthon da Equipe 13 - 2º Desafio">
+  <!--Integrantes: Lucas Tiriva/ Jeison Tomio/ -->
+  <title>Hackthon Equipe 13</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="media.css">
+  <link rel="icon" href="assets/13.png">
+</head>
+
+<body>
+  <!--Formatação do cabeçalho-->
+  <header class="cabecalho" id="cabecalho">
+    <img class="cabecalho-imagem" src="assets/13-tilte.png" href="#" id="headerLogo" alt="Logo da Equipe 13">
+    <!--Logo no cabeçalho-->
+    <nav class="cabecalho-menu">
+      <a class="cabecalho-menu-item" href="#">Home</a>
+      <a class="cabecalho-menu-item" href="#section-2">Planejar</a>
+      <a class="cabecalho-menu-item" href="#Equipe">Equipe</a>
+      <a class="cabecalho-menu-item" href="#Contato">Contato</a>
+    </nav>
+  </header>
+  <!--Corpo do site-->
+  <main class="conteudo" id="conteudo">
+    <!--Parte 1 do corpo-->
+    <section class="section-1" id="section-1">
+      <div class="Titulo-1" id="Titulo-left">
+        <h1>Assuma o controle das suas Finanças</h1>
+        <ul>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text1"> Os principais benefícios dessa ferramenta são:</li>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text2">Ter o controle mensal das despesas e dos rendimentos que
+            movimentam o seu fluxo de caixa;</li>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text2">Ter uma visão completa do resumo financeiro anual;</li>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text2">Realizar previsões para investimentos futuros.</li>
+        </ul>
+      </div>
+      <div class="Titulo-2" id="Titulo-right">
+        <ul>
+          <p class="Titulo-2-Text" id="Titutlo-2-Text"> O controle financeiro é chave para o sucesso de qualquer
+            negócio, planos e projetos de vida. Por isso, fizemos essa ferramenta prática e gratuita para que você
+            consiga organizar a gestão financeira da sua empresa.
+          </p>
+          <p class="Titulo-2-Text" id="Titutlo-2-Text">Nossa Assistente Seventeen vai te ajudar a analisar as
+            movimentações do seu caixa de um jeito simples e eficiente.</p>
+          <p class="Titulo-2-Text" id="Titutlo-2-Text">Além disso, você também passará a ter um registro organizado da
+            saúde financeira dos seus rendimentos.</p>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <img src="assets/calculater.png" class="img1" id="img1">
+        </ul>
+      </div>
+    </section>
+    <!--Parte 2 do corpo-->
+    <section class="section-2" id="section-2">
+      <div>
+        <img src="assets/Planeje.png" class="img2" id="img2">
+
+      </div>
+      <div class="Titulo-3" id="Titulo-Planeje">
+        <h1>Planejar seus gastos e criar objetivos!</h1>
+        <ul>
+          <p class="Titulo-3-Text" id="Titutlo-3-Text"> Faça orçamento mensais, mantenha seus gastoso sob controle para
+            juntar dinheiro e alcançar aquele sonho tão aguardado.</p>
+        </ul>
+      </div>
+    </section>  
+      <!--Parte 2 - Formatação por GRID-->
+    </section> 
+    <div class="calculadora__block"> 
+        
+
+    </section>
+    <!--Parte 3 - Membros-->
+    <article class="cards" id="Equipe">
+      <section class="card jeison">
+        <div class="icon">
+          <img src="assets/Login.png" alt="Jeison">
+        </div>
+        <h3>Jeison</h3>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem placeat sit quod mollitia cum
+          suscipit.</span>
+        <button>Saiba mais</button>
+      </section>
+      <section class="card lucas">
+        <div class="icon">
+          <img src="assets/Login.png" alt="Lucas">
+        </div>
+        <h3>Lucas</h3>
+        <span>Iniciando nos estudos para se tornar um desenvolvedor Frontend, já cursou Ciencia da computação na UTFPR, mas foi 1 semestre.</span>
+        <button>Saiba mais</button>
+      </section>
+      <section class="card vinicius">
+        <div class="icon">
+          <img src="assets/Login.png" alt="Vinicius">
+        </div>
+        <h3>Vinicius</h3>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem placeat sit quod mollitia cum
+          suscipit.</span>
+        <button>Saiba mais</button>
+      </section>
+      <section class="card joao">
+        <div class="icon">
+          <img src="assets/Login.png" alt="João">
+        </div>
+        <h3>João</h3>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem placeat sit quod mollitia cum
+          suscipit.</span>
+        <button>Saiba mais</button>
+      </section>
+    </article>
+    <!-- Parte 4 - Formulario captação de lead-->
+    <section class="formulario">
+        <form action="https://formsubmit.co/equipe13hack@gmail.com" method="POST" id="Contato">
+            <h1 class="formulario-tiutlo">Entre em Contato</h1>
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <textarea name="menssage" placeholder="Escreva sua mensagem..." required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+            <button type="submit">Enviar</button>
+       </form>
+    </section>
+
+
+  </main>
+  <!--Principal-->
+
+  <footer class="rodape">
+    <ul>
+      <h2>Tech Academy</h2>
+      <p>Equipe 13 - 2º Desafio Hackthon</p>
+    </ul>
+
+  </footer>
+  <!--Rodapé-->
+</body>
+
+</html>
