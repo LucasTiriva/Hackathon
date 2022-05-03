@@ -1,176 +1,165 @@
-@import url('https://fonts.googleapis.com/css2? family= Justo & display=swap');
+wy5syw54e2qr33wht4erefdynç.plkmj 9m @import url('https://fonts.googleapis.com/css2? family= Justo & display=swap');
 
-@font-face {
-  font-family: 'Sarala Bold';
-  src: url(fonts/Sarala-Bold.ttf) format('opentype');
-  font-weight: bold;
-}
+@import url('https://fonts.googleapis.com/css2? family= Justo &família = Sarala & display=swap');
 
-@font-face {
-  font-family: 'Sarala Regular';
-  src: url(fonts/Sarala-Regular.ttf) format('truetype');
-  font-weight: normal;
-}
 * {
 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 /* Formatacao do corpo*/
 body {
   font-size: 100%;
-  background: #031a1b;
+  background: #D1CFE2;
+  font-family: sans-serif;
   font-size: 1em;
-  transition: background 0.2 linear;
 }
 
 /* Formatacao do cabecalho*/
-header {
+.cabecalho {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items:center;
+  justify-content:left;   /* Alinhei o menu no lado esquerdo, conforme indicação da PO - Apagar depois de ler*/
+  padding: 10px;
   background: #13ACB6;
   width: 100%;
+  margin-top: -1%;
+  margin-left: -1%;
   position: fixed;
-  z-index: 1;
 }
 
-header > img {
-  height: 60px;
-  width: 60px;
-  padding: 0px 5px;
-  margin: 0px 30px 0px 50px;
+.cabecalho-imagem {   /* Alterei a logo da equipe*/
+  height: 110px;
+  width: 190px;
 }
 
-nav {
+.cabecalho-menu {
   display: flex;
+  margin-left: 5%;
   gap: 39px;
 }
 
-nav > a {
-  color: white;
-  font-family:'Sarala Regular';
-}
 
-nav > a:hover {
+a:hover {
   transition: 0.5s;
   color: black;
+  text-decoration:underline;  /* Removi o underline do menu e adicionei ele no hover quando o pointer passar nele, acho que fica mais estético*/
+}
+
+.cabecalho-menu-item {
+  margin-top: 5%;  
+  color: white;
+  font-family: 'Sarala' sans-serif;
+  text-decoration-line: none;
+  font-weight: 400px;
+  font-size: 36px;
+
 }
 
 /* Formatacao da Parte 1 - Home*/
-
-main {
-  min-width: 300px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.section-1 {
+#section-1 {
   display: flex;
   flex: 1 1 300px;
   justify-content: center;
   width: 100%;
-  font-family: 'Sarala Regular'
+  padding-left: 10px;
 }
 
-.content-left {
-  color: white;
-  font-size: 1em;
+#Titulo-left {
+  padding: 20px;
+  color: black;
+  font-size: 30px;
   margin-top: 10%;
   width: 50%;
+  flex-wrap: wrap;
 }
 
-.content-left h1 {
-  margin-top: 60px;
-  font-family: 'Sarala Bold';
-  font-size: 2em;
-  text-align: center;
-  color: #13ACB6;
-  max-width: 400px;
+#Titutlo-1-Text1 {
+  list-style: none;
+  margin-left: 10px;
+  font-size: 30px;
 }
 
-.content-left h2 {
-  font-family: 'Sarala Bold';
-  font-size: 1.25em;
-  text-align: center;
-  max-width: 400px;
+#Titutlo-1-Text2 {
+  flex-wrap: wrap;
+  margin-left: 40px;
+  list-style: disc;
 }
 
-.content-left p {
-  margin: 25px;
-}
-
-.content-right {
+#Titulo-right {
   border-radius: 10px;
   background-color: #197AA1;
-  box-shadow: 5px 5px 0px white;
   margin-top: 8%;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   padding-right: 0;
-  font-size: 1.3em;
+  font-size: 20px;
   width: 50%;
   margin-right: -10%;
   flex-wrap: wrap;
 }
 
-.content-right p {
+#Titutlo-2-Text {
   display: flex;
   flex-direction: row;
   align-content: center;
   color: #fff;
+  font-size: 30px;
   padding: 5px;
   margin-top: 2%;
   margin-right: 20%;
 }
 
-#img1 {
+#img1 {    /* Retirei o escrito da img e reduzi o tamanho dela. motivo: adequação opção traduzir do site. apagar depois de ver esse aviso*/
   margin-left: -10%;
-  height: 400px;
-  width: 400px;
-  margin-top: 55%;
+  height: 300px;
+  width: 310px;
+  margin-top: 85%;
 }
 
 /* Formatacao da Parte 2 - Planeje*/
-.section-2 {
-  color: white;
+#section-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: auto;
-  min-width: 350px;
-  max-width: 700px;
+  margin-top: 10%;
+  margin-left: 30%;
+  width: 50%;
   font-size: 25px;
-  padding: 40px 10px;
-
+  padding-right: 10px;
+  height: 700px;
 }
 
-.section-2 img {
+.img2 {  /* Retirei o escrito da img e reduzi o tamanho dela. motivo: adequação opção traduzir do site. apagar depois de ver esse aviso*/
   margin-top: 10%;
   height: 300px;
 }
 
-.section-2 h1 {
-  font-size: 1.4em;
-  font-family: 'Sarala Bold';
+h1{
+    margin-left: 5%;
+    width: 700px;
 }
 
-.section-2 p{
+#Titutlo-3-Text {
   display: flex;
   flex-direction: row;
   align-content: center;
-  font-size: 0.9em;
+  color: rgb(10, 0, 0);
+  font-size: 30px;
   padding: 5px;
   margin-top: 2%;
-  background-color: #197AA1;
-  box-shadow: 5px 5px 0px white;
-  border-radius: 5px;
-  font-family: 'Sarala Regular';
+  border: solid #9CADCE;
+  border-radius: 10px;
 }
+/* Formatação da Parte 3 - Grid*/
 
-/* Formatacao da Parte 3 - Conheça colaboradores*/
+
+
+/* Formatacao da Parte 4 - Conheça colaboradores*/
 article.cards {
   display: flex;
   padding: 32px;
@@ -202,48 +191,116 @@ article.cards section.card img {
 }
 
 /* Começa a formatação do formulario captação de leading*/
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15%;
-  height: 400px;
+
+.formulario{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 40%;
 }
 
-#Contato {
-  font-size: 50px;
+.formulario h1{
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
 }
 
-.form-paragrafo {
-  font-size: 40px;
+.formulario h1::before{
+    content: "📧";
+    display: block;
+}
+.formulario{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 2rem;
 }
 
-input {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1%;
-  height: 60px;
-  width: 700px;
-  padding: 5px;
-  border-radius: 10px;
-  border: none;
-  font-size: 25px;
-  gap: 2px;
+.formulario input,
+.formulario textarea,
+.formulario button{
+    display: block;
+    width: 100%;
 }
 
-form [type="submit"] {
-  width: 5%;
-  height: 50px;
-  background-color: #f3f3b5;
-  color: black;
-  font-weight: bolder;
+.formulario input,
+.formulario textarea{
+    font: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 2rem;
+    transition: border-color,
+    box-shadow 0.2s;
+}
+
+.formulario textarea{
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.formulario input:hover,
+.formulario input:focus,
+.formulario textarea:hover,
+.formulario textarea:focus{
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dc8ff;
+}
+
+.formulario button{
+    display: block;
+    padding: 1rem;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.formulario button:hover,
+.formulario button:focus{
+    outline: none;
+    background: #09d;
+}
+
+/*Formatação da página de agradecimento*/
+.thanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo13{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70%;
+    margin-left: 7%;
+}
+
+.thanks h1{
+    margin-left: 25%;
+}
+.thanks h2{
+    margin-left: 8%;
 }
 
 /* Começa a formatação do rodape*/
-footer {
+.rodape {
   height: 170px;
   width: 100%;
   background: #13ACB6;
+  text-decoration: none;
 }
 
 .rodape-left {
@@ -252,13 +309,14 @@ footer {
   font-weight: bold;
   text-transform: unset;
   margin-top: 50px;
-  text-align: center;
+  text-align: left;
   color: #fff;
 }
 
 .rodape h2 {
   margin-left: 1%;
 }
+
 
 #rodape-img {
   margin-left: 3%;

@@ -9,56 +9,75 @@
   <title>Hackthon Equipe 13</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="media.css">
-  <link rel="icon" href="assets/Logo-17.png">
+  <link rel="icon" href="assets/13.png">
 </head>
 
 <body>
   <!--Formatação do cabeçalho-->
-  <header>
-    <img src="assets/Logo-17.png" id="headerLogo" alt="Logo da Equipe 13">
+  <header class="cabecalho" id="cabecalho">
+    <img class="cabecalho-imagem" src="assets/13-tilte.png" href="#" id="headerLogo" alt="Logo da Equipe 13">
     <!--Logo no cabeçalho-->
-    <nav>
-      <a href="#">Home</a>
-      <a href="#section-2">Planeje</a>
-      <a href="#Titulo-Planeje">Equipe</a>
-      <a href="#Contato">Contato</a>
+    <nav class="cabecalho-menu">
+      <a class="cabecalho-menu-item" href="#">Home</a>
+      <a class="cabecalho-menu-item" href="#section-2">Planejar</a>
+      <a class="cabecalho-menu-item" href="#Equipe">Equipe</a>
+      <a class="cabecalho-menu-item" href="#Contato">Contato</a>
     </nav>
   </header>
   <!--Corpo do site-->
-  <main>
+  <main class="conteudo" id="conteudo">
     <!--Parte 1 do corpo-->
-    <section class="section-1">
-      <div class="content-left">
+    <section class="section-1" id="section-1">
+      <div class="Titulo-1" id="Titulo-left">
         <h1>Assuma o controle das suas Finanças</h1>
-           <h2>Os principais benefícios dessa ferramenta são:</h2>
-              <p> &#x1F4DD; Ter o controle mensal das despesas e dos rendimentos que movimentam o seu fluxo de caixa;</p>
-              <p> &#x1F911; Ter uma visão completa do resumo financeiro anual;</p>
-              <p> &#x1F680; Realizar previsões para investimentos futuros.</p>
+        <ul>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text1"> Os principais benefícios dessa ferramenta são:</li>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text2">Ter o controle mensal das despesas e dos rendimentos que
+            movimentam o seu fluxo de caixa;</li>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text2">Ter uma visão completa do resumo financeiro anual;</li>
+          <li class="Titulo-1-Text" id="Titutlo-1-Text2">Realizar previsões para investimentos futuros.</li>
+        </ul>
       </div>
-      <div class="content-right">
-          <p> O controle financeiro é chave para o sucesso de qualquer
+      <div class="Titulo-2" id="Titulo-right">
+        <ul>
+          <p class="Titulo-2-Text" id="Titutlo-2-Text"> O controle financeiro é chave para o sucesso de qualquer
             negócio, planos e projetos de vida. Por isso, fizemos essa ferramenta prática e gratuita para que você
             consiga organizar a gestão financeira da sua empresa.
           </p>
-          <p>Nossa Assistente Seventeen vai te ajudar a analisar as
+          <p class="Titulo-2-Text" id="Titutlo-2-Text">Nossa Assistente Seventeen vai te ajudar a analisar as
             movimentações do seu caixa de um jeito simples e eficiente.</p>
-          <p>Além disso, você também passará a ter um registro organizado da
+          <p class="Titulo-2-Text" id="Titutlo-2-Text">Além disso, você também passará a ter um registro organizado da
             saúde financeira dos seus rendimentos.</p>
+        </ul>
       </div>
       <div>
-         <img src="assets/calculater.png" class="img1" id="img1">
+        <ul>
+          <img src="assets/calculater.png" class="img1" id="img1">
+        </ul>
       </div>
     </section>
+    <!--Parte 2 do corpo-->
+    <section class="section-2" id="section-2">
+      <div>
+        <img src="assets/Planeje.png" class="img2" id="img2">
 
-    <section class="section-2">
-        <img src="assets/Planeje.png">
-      <div>
-        <h1>Planeje seus gastos e crie objetivos</h1>
-        <p> Faça orçamento mensais, mantenha seus gastos sob controle para
-            juntar dinheiro e alcançar aquele sonho tão aguardado.</p>
       </div>
+      <div class="Titulo-3" id="Titulo-Planeje">
+        <h1>Planejar seus gastos e criar objetivos!</h1>
+        <ul>
+          <p class="Titulo-3-Text" id="Titutlo-3-Text"> Faça orçamento mensais, mantenha seus gastoso sob controle para
+            juntar dinheiro e alcançar aquele sonho tão aguardado.</p>
+        </ul>
+      </div>
+    </section>  
+      <!--Parte 2 - Formatação por GRID-->
+    </section> 
+    <div class="calculadora__block"> 
+        
+
     </section>
-    <article class="cards">
+    <!--Parte 3 - Membros-->
+    <article class="cards" id="Equipe">
       <section class="card">
         <div class="icon">
         <img src="assets/Login.png" alt="Jeison">
@@ -78,28 +97,28 @@
         <button>Saiba mais</button>
       </section>
     </article>
-
-    <section>
-      <div>
-        <form class="form">
-          <h2 class="Contato" id="Contato">Contate-nos</h2>
-          <p class="form-paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          <input class="campo" type="nome" placeholder="Nome">
-          <input class="campo" type="email" placeholder="E-mail">
-          <input class="botao" type="submit" value="Enviar">
-        </form>
-      </div>
+    <!-- Parte 4 - Formulario captação de lead-->
+    <section class="formulario">
+        <form action="https://formsubmit.co/equipe13hack@gmail.com" method="POST" id="Contato">
+            <h1 class="formulario-tiutlo">Entre em Contato</h1>
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <textarea name="menssage" placeholder="Escreva sua mensagem..." required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+            <button type="submit">Enviar</button>
+       </form>
     </section>
 
 
   </main>
   <!--Principal-->
 
-  <footer>
-      <li class="rodape-left"><img src="assets/Logo-17.png" id="rodape-img">
-        <h2>Tech Academy</h2>
-        <p>Equipe 13 - 2º Desafio Hackthon</p>
-
+  <footer class="rodape">
+    <ul>
+      <h2>Tech Academy</h2>
+      <p>Equipe 13 - 2º Desafio Hackthon</p>
+    </ul>
 
   </footer>
   <!--Rodapé-->
