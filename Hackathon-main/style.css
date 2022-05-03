@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2? family= Justo & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Justo &família = Sarala & display=swap');
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+:root {
+  --base-color: #FFFAFA;
+  --itens-color: #DCDCDC;
+  --dark-color: #A9A9A9;
+}
+
+/* Formatacao do corpo*/
+body {
+  font-size: 100%;
+  background-color: var(--base-color);
+  font-family: sans-serif;
+  font-size: 1em;
+  transition: 0.2 linear;
+}
+
+/* Formatacao do cabecalho*/
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: var(--dark-color);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.cabecalho-imagem {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 39px;
+}
+
+a:hover {
+  transition: 0.5s;
+  color: black;
+}
+
+.cabecalho-menu-item {
+  color: white;
+  font-family: 'Sarala' sans-serif  ;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+/* Formatacao da Parte 1 - Home*/
+#section-1 {
+  display: flex;
+  flex: 1 1 300px;
+  justify-content: center;
+  width: 100%;
+  padding-left: 10px;
+}
+
+#Titulo-left {
+  padding: 20px;
+  color: black;
+  font-size: 30px;
+  margin-top: 10%;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+#Titutlo-1-Text1 {
+  list-style: none;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+#Titutlo-1-Text2 {
+  flex-wrap: wrap;
+  margin-left: 40px;
+  list-style: disc;
+}
+
+#Titulo-right {
+  border-radius: 10px;
+  background-color: var(--itens-color);
+  margin-top: 8%;
+  padding: 10px 10px 10px 10px;
+  padding-right: 0;
+  font-size: 20px;
+  width: 50%;
+  margin-right: -10%;
+  flex-wrap: wrap;
+}
+
+#Titutlo-2-Text {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  color: #fff;
+  font-size: 30px;
+  padding: 5px;
+  margin-top: 2%;
+  margin-right: 20%;
+}
+
+#img1 {
+  margin-left: -10%;
+  height: 400px;
+  width: 400px;
+  margin-top: 55%;
+}
+
+/* Formatacao da Parte 2 - Planeje*/
+#section-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 30%;
+  width: 50%;
+  font-size: 25px;
+  padding-right: 10px;
+  height: 700px;
+}
+
+.img2 {
+  margin-top: 10%;
+  height: 300px;
+}
+
+#Titutlo-3-Text {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  color: rgb(10, 0, 0);
+  font-size: 30px;
+  padding: 5px;
+  margin-top: 2%;
+  border: solid #9CADCE;
+  border-radius: 10px;
+}
+
+/* Formatacao da Parte 3 - Conheça colaboradores*/
+article.cards {
+  display: flex;
+  padding: 32px;
+}
+
+article.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--itens-color);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 256px;
+  margin-left: 32px;
+}
+
+article.cards section.card:first-child {
+  margin-left: 0;
+}
+
+article.cards section.card .icon {
+  width: 8rem;
+  height: 8rem;
+}
+
+article.cards section.card img {
+  width: 100%
+}
+
+/* Começa a formatação do formulario captação de leading*/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+  height: 400px;
+}
+
+#Contato {
+  font-size: 50px;
+}
+
+.form-paragrafo {
+  font-size: 40px;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  height: 60px;
+  width: 700px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 25px;
+  gap: 2px;
+}
+
+form [type="submit"] {
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--itens-color);
+  color: black;
+  align-items: center;
+  font-weight: bolder;
+}
+
+/* Começa a formatação do rodape*/
+.rodape {
+  height: 170px;
+  width: 100%;
+  background-color: var(--dark-color);
+}
+
+.rodape-left {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: unset;
+  margin-top: 50px;
+  text-align: left;
+  color: #fff;
+}
+
+.rodape h2 {
+  margin-left: 1%;
+}
+
+#rodape-img {
+  margin-left: 3%;
+  height: 90px;
+  width: 90px;
+}
